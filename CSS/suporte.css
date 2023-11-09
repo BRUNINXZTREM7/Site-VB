@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+
+body {
+    background: black;
+    color: white;
+    font-family: 'roboto slab';
+}
+
+header {
+    background: black;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    font-size: 35px;
+    color: pink;
+}
+
+.links ul {
+    display: flex;
+    gap: 50px;
+}
+
+.links ul li {
+    font-size: 20px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.links ul li a {
+    color: pink;
+    text-decoration: none;
+}
+
+.links ul li a:hover {
+    cursor: pointer;
+    color: #89A7B1;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    animation: changeLights 5s linear infinite;
+}
+
+.area-comentarios {
+    display: grid;
+    float: left;
+    padding-left: 300px;
+}
+
+.nome {
+    font-size: 30px;
+}
+
+.nome-input {
+    width: 600px;
+    height: 30px;
+    padding-left: 30px;
+    float: right;
+}
+
+.comentario {
+    font-size: 30px;
+    padding-right: 30px;
+}
+
+.comentario-input {
+    width: 600px;
+    height: 30px;
+    padding-left: 30px; 
+    float: right;
+}
+
+.form-control {
+    width: 800px;
+    border-radius: 50px;
+    border: 3px solid salmon;
+    background: linear-gradient(blue);
+    margin-left: 20px;
+}
+
+@keyframes changeLights {
+    0% {color: grey;}
+    25% {color: salmon;}
+    50% {color: pink;}
+    75% {color: purple;}
+    100% {color: black;}
+}

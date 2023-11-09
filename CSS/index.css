@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+
+body {
+    background: black;
+    color: white;
+    font-family: 'roboto slab';
+}
+
+header {
+    background: black;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    font-size: 35px;
+    color: pink;
+}
+
+.links ul {
+    display: flex;
+    gap: 50px;
+}
+
+.links ul li {
+    font-size: 20px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.links ul li a {
+    color: pink;
+    text-decoration: none;
+}
+
+.links ul li a:hover {
+    cursor: pointer;
+    color: #89A7B1;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section {
+    padding: .4rem;
+}
+
+.title {
+    text-align: center;
+    animation: changeLights 5s linear infinite;
+}
+
+.sobre {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 650px;
+}
+
+.sobre > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+.sobre .name {
+    font-size: 4rem;
+    animation: changeLights 5s linear infinite;
+}
+
+.sobre p {
+    color: var(--white);
+}
+
+.div-img {
+    max-width: 450px;
+    padding: 1rem;
+}
+
+.img-profile {
+    border-radius: 10%;
+    width: 70%;
+}
+
+.servicos-precos {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.servicos {
+    width: 30%;
+    height: auto;
+    flex-wrap: wrap;
+    font-size: 24px;
+    border-radius: 10px;
+    border: 1PX solid white;
+}
+
+.servicos ul {
+    list-style: none;
+}
+
+.precos {
+    width: 30%;
+    height: auto;
+    flex-wrap: wrap;
+    font-size: 24px;
+    border-radius: 10px;
+    border: 1PX solid white;
+}
+
+.precos  ul {
+    list-style: none;
+    float: right;
+    padding-right: 36px;
+}
+
+.precos ul li {
+    justify-content: center;
+    align-items: center;
+}
+
+.telefone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+#wpp-icon {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: pink;
+    border-radius: 70px;
+}
+
+@keyframes changeLights {
+    0% {color: grey;}
+    25% {color: salmon;}
+    50% {color: pink;}
+    75% {color: purple;}
+    100% {color: black;}
+}
